@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+body {
+  @apply bg-white text-lightgray text-[15px] font-medium leading-[1.6] relative bg-cover bg-center h-full w-full;
+  font-family: 'Open Sans', sans-serif;
+}
+#menu li:nth-child(2)::after {
+  background-color: transparent;
+}
