@@ -1,28 +1,28 @@
-import React from 'react';
-import Head from 'next/head';
+import React from "react";
+import Head from "next/head";
 import {
   FaEnvelopeOpen,
   FaPhoneSquareAlt,
-  FaFacebookF,
+  FaInstagram,
   FaLinkedinIn,
-} from 'react-icons/fa';
-import Contactform from '@/components/Contactform';
-import Pageheader from '@/components/Pageheader';
+} from "react-icons/fa";
+import Contactform from "@/components/Contactform";
+import Pageheader from "@/components/Pageheader";
 
 const Contact = () => {
   const Social = [
     {
       id: 1,
-      name: 'Facebook',
-      link: '/',
-      target: '_self',
-      icon: <FaFacebookF size="25" />,
+      name: "Instagram",
+      link: "https://www.instagram.com/it_16th_letters/",
+      target: "_self",
+      icon: <FaInstagram size="25" />,
     },
     {
       id: 2,
-      name: 'LinkedIn',
-      link: '/about',
-      target: '_self',
+      name: "LinkedIn",
+      link: "https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile",
+      target: "_self",
       icon: <FaLinkedinIn size="25" />,
     },
   ];
@@ -33,9 +33,9 @@ const Contact = () => {
       </Head>
       {/* Title section start */}
       <Pageheader
-        transparenttitle={'contact'}
-        maintitle={'get in '}
-        maintitle1={'touch'}
+        transparenttitle={"contact"}
+        maintitle={"get in "}
+        maintitle1={"touch"}
       />
       {/* Title section end */}
       {/* Body section start */}
@@ -62,7 +62,7 @@ const Contact = () => {
                 <span className="uppercase opacity-[.8] font-normal block">
                   mail me
                 </span>
-                sibimariamabraham@gmail.com
+                tiwaripriya051@gmail.com
               </p>
               <p className="font-semibold pl-[50px] leading-[21px] pt-[5px] relative mb-[1rem]">
                 <i className="text-magenta absolute text-[33px] top-[10px] left-0">
@@ -71,7 +71,7 @@ const Contact = () => {
                 <span className="uppercase opacity-[.8] font-normal block">
                   call me
                 </span>
-                +91 9987984085
+                +91 6392916571
               </p>
               {/* <ul className="flex p-0 m-0 transition-all delay-75 opacity-100 transform-none">
                 {Social.map((menu) => (

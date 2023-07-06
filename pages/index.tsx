@@ -1,20 +1,20 @@
-import Head from 'next/head';
-import { Inter } from 'next/font/google';
-import MobileProfileImage from '../public/images/img-mobile.jpg';
-import ProfileImage from '../public/images/profile22.png';
-import { FaArrowRight } from 'react-icons/fa';
-import { HiDownload } from 'react-icons/hi';
-import Typed from 'react-typed';
-import Imagecomponent from '@/components/Imagecomponent';
-import Buttoncomponent from '@/components/Buttoncomponent';
+import Head from "next/head";
+import { Inter } from "next/font/google";
+import MobileProfileImage from "../public/images/img-mobile.jpg";
+import ProfileImage from "../public/images/profile22.png";
+import { FaArrowRight } from "react-icons/fa";
+import { HiDownload } from "react-icons/hi";
+import Typed from "react-typed";
+import Imagecomponent from "@/components/Imagecomponent";
+import Buttoncomponent from "@/components/Buttoncomponent";
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>Sibi Abraham - Personal Portfolio</title>
+        <title>Priya Tiwari - Personal Portfolio</title>
       </Head>
       {/* Main section start */}
       <div className="flex items-center min-h-full p-0 mx-auto transition-all delay-75 opacity-100 transform-none md:w-full w-fit">
@@ -54,10 +54,10 @@ export default function Home() {
               <h1
                 className={`uppercase text-[30px] md:text-[51px] leading-[39px] md:leading-[62px] font-bold relative pl-[45px] pr-[25px] md:pr-0 md:mx-0 mt-[18px] mb-[7px] md:mb-[10px] text-magenta md:before:absolute md:before:left-0 md:before:top-[29px] md:before:h-[4px] md:before:w-[40px] md:before:rounded-[10px] md:before:bg-magenta md:before:content-['']`}
               >
-                I&#39;m sibi abraham. &nbsp;
+                I&#39;m Priya Tiwari. &nbsp;
                 <p className="text-lightgray text-[25px] md:text-[51px] font-semibold md:font-bold">
                   <Typed
-                    strings={['web developer', 'react developer']}
+                    strings={["web developer", "react developer"]}
                     typeSpeed={100}
                     loop={true}
                     backSpeed={50}
@@ -73,20 +73,20 @@ export default function Home() {
               {/* Personal detail section end */}
               {/* Button section start */}
               <Buttoncomponent
-                link={'/about'}
-                buttontext={'more about me'}
+                link={"/about"}
+                buttontext={"more about me"}
                 buttonImage={<FaArrowRight />}
                 extraclassName={
-                  'mr-[10px] overflow-ellipsis md:ml-0 ml-[5%] w-[90%] before:ease-in-out'
+                  "mr-[10px] overflow-ellipsis md:ml-0 ml-[5%] w-[90%] before:ease-in-out"
                 }
               />
               <Buttoncomponent
-                link={'/pdf/SibiAbraham.pdf'}
-                buttontext={'download CV'}
+                link={"/pdf/priyatiwari_cv.pdf"}
+                buttontext={"download CV"}
                 buttonImage={<HiDownload />}
-                target={'blank'}
+                target={"blank"}
                 extraclassName={
-                  'overflow-ellipsis md:ml-0 ml-[5%] w-[90%] before:ease-in-out'
+                  "overflow-ellipsis md:ml-0 ml-[5%] w-[90%] before:ease-in-out"
                 }
               />
               {/* Button section end */}

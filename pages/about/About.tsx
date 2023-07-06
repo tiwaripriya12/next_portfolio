@@ -1,9 +1,9 @@
-import React from 'react';
-import ProfileImage from '../../public/images/img-mobile-light.jpg';
-import { FaDownload } from 'react-icons/fa';
-import { BsFillBriefcaseFill } from 'react-icons/bs';
-import { FaGraduationCap } from 'react-icons/fa';
-import Head from 'next/head';
+import React from "react";
+import ProfileImage from "../../public/images/img-mobile-light.jpg";
+import { FaDownload } from "react-icons/fa";
+import { BsFillBriefcaseFill } from "react-icons/bs";
+import { FaGraduationCap } from "react-icons/fa";
+import Head from "next/head";
 import {
   aboutdata,
   experiencedata,
@@ -11,12 +11,12 @@ import {
   personaldata,
   personaldata1,
   skillsdata,
-} from '../../data/data';
-import Personaldata from '@/components/Personaldata';
-import Personaldata1 from '@/components/Personaldata1';
-import Imagecomponent from '@/components/Imagecomponent';
-import Buttoncomponent from '@/components/Buttoncomponent';
-import Pageheader from '@/components/Pageheader';
+} from "../../data/data";
+import Personaldata from "@/components/Personaldata";
+import Personaldata1 from "@/components/Personaldata1";
+import Imagecomponent from "@/components/Imagecomponent";
+import Buttoncomponent from "@/components/Buttoncomponent";
+import Pageheader from "@/components/Pageheader";
 
 const About = () => {
   return (
@@ -26,9 +26,9 @@ const About = () => {
       </Head>
       {/* Title section start */}
       <Pageheader
-        transparenttitle={'resume'}
-        maintitle={'about '}
-        maintitle1={'me'}
+        transparenttitle={"resume"}
+        maintitle={"about "}
+        maintitle1={"me"}
       />
       {/* Title section end */}
       {/* Body section start */}
@@ -82,12 +82,12 @@ const About = () => {
                 {/* CV button section start */}
                 <div className="max-w-full flex-100 relative w-full px-[15px] mt-4">
                   <Buttoncomponent
-                    link={'/pdf/SibiAbraham.pdf'}
-                    buttontext={'download CV'}
+                    link={"/pdf/priyatiwari_cv.pdf"}
+                    buttontext={"download CV"}
                     buttonImage={<FaDownload />}
-                    target={'blank'}
+                    target={"blank"}
                     extraclassName={
-                      'overflow-hidden text-ellipsis align-middle outline-none w-[70%] transition-all ease-in-out duration-75  before:ease-out ml-0'
+                      "overflow-hidden text-ellipsis align-middle outline-none w-[70%] transition-all ease-in-out duration-75  before:ease-out ml-0"
                     }
                   />
                 </div>
